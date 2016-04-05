@@ -8,10 +8,6 @@ var raincolour = "Cadetblue";
 //Set up your canvas
 function setup() {
   createCanvas(windowWidth, windowHeight);
-}
-
-//Draw your story
-function draw() {
   background(bg);
 
   //rain - make more droplets
@@ -91,7 +87,7 @@ function keyPressed() {
   }
 
 //precipitation animation
-  if(key == "p"){
+  if(key == "P"){
     if(raincolour == "aqua"){
       raincolour = "Cadetblue";
     } else if (raincolour =="Cadetblue"){
@@ -100,7 +96,7 @@ function keyPressed() {
   }
 
 //evaporation animation
-  if(key == "e"){
+  if(key == "E"){
     point(800, 460);
     point(780, 500);
     point(830, 490);
@@ -120,7 +116,7 @@ function keyPressed() {
   }
 
 //condensation animation
- if (key == "c"){
+ if (key == "C"){
    stroke ("grey");
    fill("grey");
    ellipse(350,170,70,70);
